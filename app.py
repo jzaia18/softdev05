@@ -16,11 +16,9 @@ def main():
     return 'Welcome to main!\n <a href="http://127.0.0.1:5000/occupations"> Go to occupations </a>'
 
 @app.route('/occupations')
-def occ():
+def occupations():
     return render_template("occupations.html", data = data, rand = occ.getRandWeighted(data))
 
-
-print data
     
 if __name__ == '__main__':
     app.debug = True
