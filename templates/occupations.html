@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> hi </title>
+  </head>
+  <body>
+    <table>
+    {% for job in data %}
+    <tr> <td>  {{ job }} </td> <td> {{ data[job] }} </td> </tr>
+    {% endfor %}
+    <br>
+    {{ rand }}
+    </table>
+  </body>
+</html>
