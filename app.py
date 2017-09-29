@@ -4,7 +4,7 @@
 # 2017-09-20
 
 from flask import Flask, render_template
-import occupation as occ
+from utils import occupation as occ
 
 data = occ.takeFile()
 
